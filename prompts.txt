@@ -1,0 +1,20 @@
+###Developmnt procedure with Google AI Studio
+
+Initial Request: You described the need to create a Python program for a Pi 3 to analyze /Solis/config/SolisManagerExecutionHistory.csv. 
+You specified the date format, the columns of interest (3-Unit price, 8-Imported kWh, 9-Exported kWh), 
+the need to summarize between start/end dates, and the specific calculations required 
+(total import, low/high price import kWh, total/low/high import cost, export value, final billed cost).
+
+Refinement 1: You clarified that the unit cost information was in pence and that the file path was relative to the user's path. 
+You also requested to list the rows excluded by the date range filter.
+
+Refinement 2: You asked to count the number of rows that contributed to the low-price and high-price data points within the selected period.
+
+Refinement 3 (Major Change): You requested the summary be presented on a daily basis for the selected interval, instead of just an overall total.
+
+Refinement 4 (Output & Correction): You stated you no longer needed the list of excluded rows. 
+You asked to fit the daily summaries onto one row per day. 
+You also explicitly requested setting the column indices: IMPORTED_KWH_COL_IDX = 8 and EXPORTED_KWH_COL_IDX = 9.
+
+Refinement 5: You asked to add back in columns for low cost power and high cost power (the kWh and cost breakdowns) into the single-line daily summary format.
+
