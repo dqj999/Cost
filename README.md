@@ -15,7 +15,9 @@ It is only a rough guide for several reasons:
 This was tested on a Raspberry PI 3. It might work om other architectures as well. YMMV.
 
 The entire Python code has been created by Google AI Studio using some simple prompts.
-I've never written any Python code so the fact that this works was fairly surprising to me!
+I've never written any Python code so the fact that this works was fairly surprising to me! 
+Look in the prompts.txt file for the prompts that I gave AI studio to creat this program.
+I tested the suggested code at each step between the prompts.
 
 Here's some sample output:
 
